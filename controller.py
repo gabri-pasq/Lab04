@@ -22,6 +22,7 @@ class SpellChecker:
                     if not parola.corretta:
                         paroleErrate = paroleErrate + str(parola) + " - "
                 t2 = time.time()
+                print(paroleErrate)
                 return paroleErrate, t2 - t1
 
             case "Linear":
@@ -31,6 +32,7 @@ class SpellChecker:
                     if not parola.corretta:
                         paroleErrate = paroleErrate + str(parola) + " "
                 t2 = time.time()
+
                 return paroleErrate, t2 - t1
 
             case "Dichotomic":
